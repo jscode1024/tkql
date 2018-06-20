@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="../css/grzy.css" />
+		<title>个人主页-专家推荐</title>
+	</head>
+
+	<body class="body">
+		<div class="main clearfix">
+			<div class="wrapper">
+				<div class="header">
+					<div class="left">
+						<div class="left-arrow">
+						</div>
+					</div>
+					<div class="title">
+						个人主页
+					</div>
+					<div class="right">
+						<div class="right-dot">
+						</div>
+					</div>
+				</div>
+				<div class="details">
+					<div class="details-top">
+						<div class="portrait">
+							<img src="../images/portrait.jpg" />
+						</div>
+						<div class="description">
+							<h1 class="name">幸运六合彩幸运六合彩</h1>
+							<div class="characteristic">
+								<span class="funs">
+								<i class="icon-love"></i>999
+								</span>
+
+							</div>
+						</div>
+					</div>
+					<div class="details-bottom">
+						妈妈说越是好看的女孩子越会骗人
+					</div>
+				</div>
+				<div class="nav">
+					<div class="xstz cur">
+						<a href="">心水帖子</a>
+					</div>
+					<div class="tddt">
+						<a href="">他的动态</a>
+					</div>
+				</div>
+				<!--要是没有内容就显示下面的div-->
+				<div class="kongbai">
+					<span class="icon-result"></span>
+					<span class="txt">他很懒，一点足迹都没有留下！</span>
+				</div>
+				
+			</div>
+		</div>
+		<div class="footer">
+			<div class="left">
+				+关注
+			</div>
+			<div class="right">
+				私信
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery.min.1.7.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".footer .left").on("click", function() {
+			if($(this).hasClass("yiguanzhu")) {
+				$(this).removeClass("yiguanzhu").text("+关注");
+			} else {
+				$(this).addClass("yiguanzhu").text("已关注");
+			}
+
+		})
+	</script>
+
+</html>
